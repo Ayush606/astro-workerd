@@ -1,0 +1,12 @@
+---
+export const prerender = false; // Disable static generation for this page
+
+const user = "Dynamic User";
+---
+
+<html>
+	<body>
+		<h1>Hello, {user}! This page is SSR only.</h1>
+		<p>Rendered at {new Date().toISOString()}</p>
+	</body>
+</html>
